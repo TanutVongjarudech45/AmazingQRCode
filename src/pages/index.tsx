@@ -261,11 +261,13 @@ export default function Home() {
       </a>
       <div className="site-shell">
         <header className="site-header">
-          <a className="brand" href="#" aria-label="SpeakCode home">
-            <span className="brand-symbol">
-              <Icon name="grid" size={25} />
-            </span>
-            SpeakCode
+          <a
+            className="brand"
+            href="https://mybirdfire.com/"
+            aria-label="Tana, home"
+          >
+            tana
+            <span className="brand-mark" aria-hidden="true" />
           </a>
           <nav aria-label="Main navigation">
             <a className="active-nav" href="#studio">

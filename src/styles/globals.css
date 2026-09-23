@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Tana Space Grotesk";
+  src: url("/fonts/space-grotesk-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+}
+
 :root {
   --background: #f7f8f2;
   --foreground: #253a31;
@@ -86,22 +94,23 @@ svg {
   border-bottom: 1px solid var(--line);
 }
 .brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 9px;
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: -1.15px;
+  font-family: "Tana Space Grotesk", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -1.4px;
+  color: #122d28;
 }
-.brand-symbol {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--green);
-  color: #f5f6ed;
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
+.brand-mark {
+  width: 9px;
+  height: 9px;
+  margin-top: 7px;
+  background: #136e54;
+  border-radius: 2px;
+  flex-shrink: 0;
 }
 .site-header nav {
   display: flex;
@@ -851,13 +860,6 @@ textarea {
   .preview-pill {
     display: none;
   }
-  .brand {
-    font-size: 21px;
-  }
-  .brand-symbol {
-    width: 31px;
-    height: 31px;
-  }
   .intro {
     align-items: flex-start;
     flex-direction: column;
@@ -970,16 +972,6 @@ textarea {
   }
   .site-header nav {
     gap: 15px;
-  }
-  .brand {
-    font-size: 19px;
-  }
-  .brand-symbol {
-    width: 28px;
-    height: 28px;
-  }
-  .brand-symbol svg {
-    width: 21px;
   }
   .eyebrow {
     font-size: 8px;
